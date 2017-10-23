@@ -1,0 +1,76 @@
+@font-face {
+  font-family: gameOver;
+  src: url(../fonts/Game_Over/OpenType/Game_Over.otf);
+}
+
+@font-face {
+  font-family: c64;
+  src: url(../fonts/Commodore-64-v6.3.ttf);
+}
+
+.body {
+  height: 100%;
+  width: 100%;
+  background-color: #08E7B9;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centerBox {
+  width: 90%;
+  height: 50%;
+  background-color: #16123A;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxText {
+  color: #d85c6f;
+  /*font-family: gameOver;*/
+  font-family: c64;
+}
+
+#textHolder {
+  font-size: 40px;
+}
+
+.txt {
+  position: absolute;
+  padding: 15px;
+}
+
+#welcome{
+  font-family: gameOver;
+  font-size: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#loading{
+  height: 100px;
+  float: right;
+  align-self: flex-end;
+  margin: 1em;
+}
+
+.char {
+  visibility: hidden;
+}
+
+.tint:before {
+  content: "";
+  display: block;
+  /*position: absolute;*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #16123A;
+  transition: all .3s linear;
+}
